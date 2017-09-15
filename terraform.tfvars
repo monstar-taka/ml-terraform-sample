@@ -7,11 +7,14 @@ stg_vpc_cidr = "10.1.0.0/16"
 prod_vpc_cidr = "10.0.0.0/16"
 
 #--------------------------------------------------------------
+# common settings
+#--------------------------------------------------------------
+prj_name = "demo"
+
+#--------------------------------------------------------------
 # internet gateway
 #--------------------------------------------------------------
-dev_vpc_internet_gateway = "igw"
-stg_vpc_internet_gateway = "igw"
-prod_vpc_internet_gateway = "igw"
+internet_gateway = "igw"
 
 #--------------------------------------------------------------
 # subnet
@@ -87,4 +90,3 @@ prod_vpc_flow_log_name = "vpc-flow-log"
 prod_vpc_flow_log_cloudwatch_log_group_name = "vpc-flow-log-group"
 prod_vpc_flow_log_policy = "vpc-flow-log-policy"
 prod_vpc_flow_log_role = "vpc-flow-log-role"
-
